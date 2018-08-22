@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <canvas id="backgroud-canvas"></canvas>
+    <div class="container">
+        <section class="content">
+            <form id="loginForm">
+                <img src="../assets/logo.png">
+                <div class="form-group text-center">
+                    <span class="header-title">Seja Bem-vindo</span>
+                </div>
+                <div class="form-group text-center">
+                    <span class="header-legend">Se você está aqui é porque você é uma pessoa especial para o EasyCrédito</span>
+                </div>
+                <div id="loginAlert" class="alert alert-danger alert-dismissible alert-dismissible fade show text-center" style="display: none" role="alert">
+                    Email ou senha inválida.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="form-group">
+                    <input id="user" class="form-control" type="text" placeholder="Usuário">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" placeholder="Senha">
+                </div>
+                <div class="form-group remember-user">
+                    <input id="password" type="checkbox"> Lembrar usuário
+                </div>
+                <button type="button" class="btn btn-primary" onclick="login()">Entrar</button>
+                <span class="copyright mt-4">© Copyright 2014-2018 - easycredito.me - Todos os direitos reservados</span>
+            </form>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <script src="../js/TweenLite.min.js"></script>
+    <script src="../js/EasePack.min.js"></script>
+    <script src="../js/rAF.js"></script>
+    <script src="../js/backgroud-stuff.js"></script>
+    <script src="../js/validators.js"></script>
+</body>
+</html>
